@@ -49,10 +49,12 @@ if response.status_code == 200:
     table_2 = soup.find_all('table', {'class':'db', 'border': '1'})[1]
 
     if table_2: 
+        # Extract table 2 headers
         headers = [th.text.strip() for th in table_2.find_all('th')]
         print(" | " .join(headers))
 
         for row in table_2.find_all('tr')[1:]:
+        # Extract table 2 rows
             columns= [td.text.strip() for td in row.find_all('td')]
             print(" |   " .join(columns))
     else:
