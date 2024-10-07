@@ -87,7 +87,7 @@ def get_data():
 output = get_data()
 if output.strip():
     send_email("Listed Prefixes Notification", output)
-    send_mattermost_notification(f"**Listed Prefixes:**\n{output}")
+    send_mattermost_notification(f"**Listed Prefixes:**\n```{output}```")
 else:
     send_email("Listed Prefixes Notifications", "No prefixes listed")
-    send_mattermost_notification(f"**Listed Prefixes:**\n{'No listed prefix'}")
+    send_mattermost_notification(f"**Listed Prefixes:**\n```{'No listed prefix'}```")
