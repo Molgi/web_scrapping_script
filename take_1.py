@@ -72,7 +72,7 @@ def get_data():
             for row in table_1.find_all('tr')[1:]:  # Skip the header row
                 columns = [td.text.strip() for td in row.find_all('td')]
                 # Check if "NOT LISTED" is not in the columns
-                if "LISTED" in columns:
+                if "NOT LISTED" not in columns:
                     listed_prefixes.append(" | ".join(columns))  # Collect listed prefixes
         else:
             print("Table 1 not found in the response.")
@@ -87,7 +87,7 @@ def get_data():
 output = get_data()
 if output.strip():
     send_email("Listed Prefixes Notification", output)
-    send_mattermost_notification(f"Listed Prefixes:\n{output}")
+    send_mattermost_notification(f"**Listed Prefixes:**\n{output}")
 else:
     send_email("Listed Prefixes Notifications", "No prefixes listed")
-    send_mattermost_notification(f"Listed Prefixes:\n{'No listed prefix'}")
+    send_mattermost_notification(f"**Listed Prefixes:**\n{'No listed prefix'}")
