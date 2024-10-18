@@ -5,8 +5,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # Email credentials
-SENDER_EMAIL = 'otre@mailtesting.gtp.renu.ac.ug'  
-RECIPIENT_EMAIL = 'tomudu@renu.ac.ug'  
+SENDER_EMAIL = 'xxxxxxxxxxxxxxxxxxxxxxxx'  
+RECIPIENT_EMAIL = 'xxxxxxxxxxxxxxxxxxxxx'  
 SMTP_USER = 'xxxxxxxxxxxxxxxxxxxx'
 SMTP_PASSWORD = 'xxxxxxxxxxxxxxxxxxx'  
 SMTP_PORT = '587'  
