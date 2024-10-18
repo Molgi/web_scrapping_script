@@ -32,7 +32,7 @@ def send_email(subject, body):
 # Function to send mattermost notification
 def send_mattermost_notification(text):
     payload = {'text': text}
-    response = requests.post("https://chat.renu.ac.ug/hooks/tkeaszt3cfd4mp6sfxgo1tp6ar", json=payload)
+    response = requests.post("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", json=payload)
         
        
 
