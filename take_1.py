@@ -7,10 +7,10 @@ from email.mime.multipart import MIMEMultipart
 # Email credentials
 SENDER_EMAIL = 'otre@mailtesting.gtp.renu.ac.ug'  
 RECIPIENT_EMAIL = 'tomudu@renu.ac.ug'  
-SMTP_USER = 'notifications@renu.ac.ug'
-SMTP_PASSWORD = '@SysAdm-Rnotifications!#'  
+SMTP_USER = 'xxxxxxxxxxxxxxxxxxxx'
+SMTP_PASSWORD = 'xxxxxxxxxxxxxxxxxxx'  
 SMTP_PORT = '587'  
-SMTP_SERVER = 'webmail.renu.ac.ug'
+SMTP_SERVER = 'xxxxxxxxxxxxxxxxxx'
 
 # Function to send email notification
 def send_email(subject, body):
